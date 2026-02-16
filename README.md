@@ -2,9 +2,13 @@
 
 Tracking and visualizing my GitHub contribution history — which has been growing exponentially.
 
-![Weekly contributions](github-contributions-weekly-line.png)
+### 6by9 theme
+![Weekly contributions (6by9)](github-contributions-weekly-line-6by9.png)
+![Daily contributions (6by9)](github-contributions-daily-bar-6by9.png)
 
-![Daily contributions](github-contributions-daily-bar.png)
+### Default theme
+![Weekly contributions (default)](github-contributions-weekly-line-default.png)
+![Daily contributions (default)](github-contributions-daily-bar-default.png)
 
 ## Usage
 
@@ -24,6 +28,8 @@ This saves daily contribution counts to `contributions.json`.
 Requires Python 3 and `matplotlib`.
 
 ```bash
-python3 plot_daily_bar.py     # daily bar chart
-python3 plot_weekly_line.py   # weekly line graph
+python3 plot_daily_bar.py                # daily bar chart (default theme)
+python3 plot_weekly_line.py              # weekly line graph (default theme)
+python3 plot_daily_bar.py --theme 6by9   # daily bar chart (6by9 dark theme)
+python3 plot_weekly_line.py --theme 6by9 # weekly line graph (6by9 dark theme)
 ```
